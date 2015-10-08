@@ -1,0 +1,23 @@
+{
+  "name": "formula-cell",
+  "version": "0.1.0",
+  "description": "CELL function",
+  "main": "CELL.js",
+  "scripts": {
+    "test": "mocha test",
+    "build": "babel CELL.es6 -m umd --out-file CELL.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FormulaPages/cell.git"
+  },
+  "author": "Peter Moresi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FormulaPages/cell/issues"
+  },
+  "homepage": "https://github.com/FormulaPages/cell#readme",
+  "devDependencies": {
+    "formula-sheet": "^0.1.1"
+  }
+}
