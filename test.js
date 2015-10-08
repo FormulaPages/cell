@@ -9,4 +9,7 @@ describe('cell', function() {
     c = new cell(new sheet(), 100);
     assert( c.index === 100 );
   });
+  it('should error on non-sheet object', function() {
+    assert.throws( function() { new cell('invalid', 0) } );
+  });
 });
