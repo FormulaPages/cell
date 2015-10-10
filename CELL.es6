@@ -1,4 +1,5 @@
-import {INDEX2ADDR} from 'formula-address-system';
+import INDEX2COL from 'formula-index2col';
+import INDEX2ROW from 'formula-index2row';
 
 /* Structure for CELL reference
  */
@@ -17,8 +18,12 @@ export default class CELL {
 
   /* Returns object with row/col
    */
-  getAddr() {
-    return INDEX2ADDR(this.cellIndex);
+  getRow() {
+    return INDEX2ROW(this.cellIndex);
+  }
+
+  getColumn() {
+    return INDEX2COL(this.cellIndex);
   }
 
 }

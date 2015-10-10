@@ -1,10 +1,10 @@
 {
   "name": "formula-cell",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CELL function",
   "main": "CELL.js",
   "scripts": {
-    "test": "mocha test",
+    "test": "mocha -r jscoverage -R spec test",
     "build": "babel CELL.es6 -m umd --out-file CELL.js"
   },
   "repository": {
@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/FormulaPages/cell#readme",
   "devDependencies": {
-    "formula-sheet": "^0.1.1"
+    "formula-sheet": "^0.1.1",
+    "jscoverage": "^0.6.0"
+  },
+  "dependencies": {
+    "formula-index2col": "^1.0.0",
+    "formula-index2row": "^1.0.0"
   }
 }
